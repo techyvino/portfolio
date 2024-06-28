@@ -1,3 +1,4 @@
+/* ------------------------------- Experience ------------------------------- */
 export const experience = [
   {
     period: "2023/05 - Present",
@@ -63,5 +64,46 @@ export const experience = [
       </p>
     ),
     badge: ["HTML", "CSS", "Sass", "JavaScript", "React", "AWS"],
+  },
+];
+
+/* --------------------------------- Skills --------------------------------- */
+
+export const skillSet = [
+  {
+    name: "HTML",
+    iconPath: "/html.svg",
+  },
+  {
+    name: "CSS",
+    iconPath: "/css3.svg",
+  },
+  {
+    name: "JavaScript",
+    iconPath: "/javascript.svg",
+  },
+  {
+    name: "TypeScript",
+    iconPath: "/typescript.svg",
+  },
+  {
+    name: "React Js",
+    iconPath: "/react.svg",
+  },
+  {
+    name: "Next Js",
+    iconPath: "/nextjs.svg",
+  },
+  {
+    name: "Redux",
+    iconPath: "/redux.svg",
+  },
+  {
+    name: "Tailwind CSS",
+    iconPath: "/tailwindcss.svg",
+  },
+  {
+    name: "Git",
+    iconPath: "/git.svg",
   },
 ];

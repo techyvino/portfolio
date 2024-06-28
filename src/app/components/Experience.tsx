@@ -1,11 +1,11 @@
 import clsx from "clsx";
-import { TracingBeam } from "../ui/TracingBeam";
 import { experience } from "../data";
+import { TracingBeam } from "../ui/TracingBeam";
 
 const Experience = () => {
   return (
-    <div className="my-5 relative min-h-screen ">
-      <h1 className="text-5xl font-bold">Experience</h1>
+    <div className="relative min-h-screen">
+      <h1 className={clsx("text-5xl font-bold")}>Experience</h1>
       <TracingBeam>
         {experience.map((item, index) => (
           <div key={`content-${index}`} className="pt-8">
