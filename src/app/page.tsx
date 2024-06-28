@@ -3,9 +3,13 @@ import Intro from "./components/Intro";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen min-w-fit p-10">
-      <Intro />
-      <Experience />
+    <main className="snap-y snap-mandatory overflow-y-scroll h-screen flex-grow z-0">
+      <div className="snap-always snap-center" id="Intro">
+        <Intro />
+      </div>
+      <div className="snap-always snap-center" id="Experience">
+        <Experience />
+      </div>
     </main>
   );
 }
