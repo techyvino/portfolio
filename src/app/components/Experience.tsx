@@ -5,7 +5,8 @@ const Experience = () => {
   const experience = [
     {
       period: "2023/05 - Present",
-      title: "Team Lead  •  Credo Health Services Pvt Ltd.",
+      role: "Team Lead",
+      company: "Credo Health Services Pvt Ltd",
       description: (
         <p>
           As Team Lead, I oversee feature requirements with the product team,
@@ -28,7 +29,8 @@ const Experience = () => {
     },
     {
       period: "2022/03 - 2023/05",
-      title: "Junior Software Engineer • Credo Health Services Pvt Ltd.",
+      role: "Junior Software Engineer",
+      company: "Credo Health Services Pvt Ltd",
       description: (
         <p>
           In our Scrum methodology, tasks are initiated through ticket creation
@@ -47,7 +49,8 @@ const Experience = () => {
     },
     {
       period: "2021/07 - 2022/03",
-      title: "Software Developer - Frontend • Billiontags Creations Pvt Ltd.",
+      role: "Software Developer - Frontend",
+      company: "Billiontags Creations Pvt Ltd",
       description: (
         <p>
           At our small-scale company, we leverage the Kanban methodology for
@@ -72,12 +75,17 @@ const Experience = () => {
       <h1 className="text-5xl font-bold">Experience</h1>
       <TracingBeam>
         {experience.map((item, index) => (
-          <div key={`content-${index}`} className="pt-12 grid grid-cols-12">
-            <div className="col-span-2 text-sm text-gray-600">
-              {item?.period}
-            </div>
-            <div className="col-span-10">
-              <p className={clsx("text-xl font-semibold mb-4")}>{item.title}</p>
+          <div key={`content-${index}`} className="pt-8">
+            <>
+              <p className={clsx("text-xl font-semibold")}>{item.role}</p>
+              <div className="flex justify-between w-full">
+                <p className="text-sm text-gray-600 mb-4 italic">
+                  <span>{item?.company}</span>
+                </p>
+                <p className="text-sm text-gray-600 mb-4 italic">
+                  <span>{item?.period}</span>
+                </p>
+              </div>
 
               <div className="text-sm">{item.description}</div>
 
@@ -85,13 +93,13 @@ const Experience = () => {
                 {item.badge?.map((skill, skillIndex) => (
                   <p
                     key={`${skill}-${skillIndex}`}
-                    className="bg-black text-white rounded-full text-sm w-fit px-4 py-1"
+                    className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 dark:bg-white dark:text-black"
                   >
                     <span>{skill}</span>
                   </p>
                 ))}
               </div>
-            </div>
+            </>
           </div>
         ))}
       </TracingBeam>
