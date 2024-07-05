@@ -8,8 +8,8 @@ const CaveatFont = Caveat({ subsets: ["latin-ext"] });
 const Intro = () => {
   return (
     <div className="flex justify-center items-center w-full relative min-h-screen ">
-      <div className="text-5xl font-semibold md:w-6/12 w-full">
-        <p className="text-nowrap">
+      <div className="md:text-5xl text-3xl font-semibold md:w-6/12 w-full">
+        <p className="">
           {`Hello, I'm `}
           <span
             className={clsx(
@@ -20,11 +20,11 @@ const Intro = () => {
             {`< Vinothkumar />`}
           </span>
         </p>
-        <p className="text-gray-600 text-4xl text-nowrap">
+        <p className="text-gray-600 md:text-4xl text-nowrap text-2xl">
           I build things for the web.
         </p>
 
-        <p className="text-sm font-normal mt-2">
+        <p className="text-sm font-normal mt-2 indent-4">
           Frontend Developer I specialize in building responsive, user-friendly
           interfaces with a focus on HTML, CSS, and JavaScript (ES6+). With
           proficiency in React.js and Next.js, I prioritize performance
