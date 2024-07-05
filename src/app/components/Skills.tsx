@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import { skillSet } from "../data";
 
 const Skills = () => {
@@ -10,7 +9,7 @@ const Skills = () => {
         {skillSet.map((skill, idx) => (
           <div
             key={`${idx}-${skill?.name}`}
-            className="border rounded-xl p-4 flex flex-col items-center gap-y-3 min-w-36"
+            className="border border-gray-50 rounded-xl p-4 flex flex-col items-center gap-y-3 min-w-36"
           >
             <Image
               src={skill.iconPath}

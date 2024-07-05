@@ -4,7 +4,6 @@ import { BackgroundBeams } from "../ui/BackgroundBeams";
 
 const CaveatFont = Caveat({ subsets: ["latin-ext"] });
 
-// const JoseFin = Josefin_Sans();
 const Intro = () => {
   return (
     <div className="flex justify-center items-center w-full relative min-h-screen ">
